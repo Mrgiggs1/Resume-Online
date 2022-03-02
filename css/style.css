@@ -1,0 +1,320 @@
+/* ---------------------------------Nav Bar --------------------------------------------- */
+
+nav {
+    margin-top: 0;
+    background-color: rgb(233, 161, 172);
+    /* border-radius: 10px; */
+    padding: 0.1rem 0.3rem;
+    position: fixed;
+    width: 100%;
+    overflow:visible;
+}
+
+nav img{
+    width: 80px;
+    height: auto;
+    border-radius: 10%;
+    display: inline-block;
+    padding: 0.7rem 1rem;
+}
+
+nav ul {
+    display: flex;
+    float: right;
+    list-style-type: none;
+    
+}
+
+nav li {
+    justify-content: space-between;
+    margin-right: 1.5rem;
+    margin-top: 1rem;
+    text-decoration: none;
+    display: block;
+    background-color: purple;
+    color: white;
+    border-radius: 12px;
+    padding: 0.2rem 0.4rem;
+}
+
+nav span {
+    padding-top: 2rem;
+    border: 1px solid red;
+}
+
+/* --------------------------------End of Nav Bar ------------------------------------------ */
+
+
+/* container start */
+.container {
+    margin: 8rem 5%;
+    /* margin-top: 2rem; */
+    
+   
+}
+
+    legend {
+        color: purple;
+        font-weight: bold;
+    }
+
+    fieldset {
+        border-radius: 10px;
+        border: 2px dotted purple;
+        display: flex;
+        
+    }
+
+    fieldset .left_content {
+        flex-basis: 20%;
+        float: left;
+        border-right: 1.5px solid purple;
+        background: rgb(63,94,251);
+        background: linear-gradient(253deg, rgba(252,70,107,1) 0%,rgba(63,94,251,1)  100%);
+        border-radius: 12px;
+    }
+
+    fieldset .left_content img {
+        padding: 3rem 2rem 0.1rem 0.1rem;
+        height: auto;
+        width: 70vh;
+        border-radius: 70%;
+        
+    }
+
+    fieldset .right_content {
+        flex-basis: 80%;
+        margin-left: 0.4rem;
+        border-left: 2px solid pink;
+        background: rgb(63,94,251);
+        background: linear-gradient(223deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+    }
+
+    fieldset .right_content h1 {
+        font-family: cursive;
+        font-weight: bolder;
+        text-align: center;
+        color: purple;
+        font-size: 60px;
+    }
+
+    fieldset .right_content p {
+        text-align: left;
+        margin: 1rem 10%;
+    }
+
+    fieldset .right_content ul {
+        float: center;
+        display: flex;
+        justify-content: space-evenly;
+    }
+
+    fieldset .right_content li {
+        justify-content: space-evenly;
+        text-decoration: none;
+        list-style-type: none;
+    }
+
+
+    /* Portfolio section */
+
+    h2 {
+        margin-top: 2rem;
+        font-family: cursive;
+    }
+    /* h3 {
+        margin-left: 5rem;
+    } */
+    h2 strong {
+        font-family: cursive;
+        color: red;
+        font-weight: bolder;
+        font-size: xx-large;
+    }
+
+    section iframe {
+        width: 70%;
+        height: auto;
+        border-top-right-radius: 25px ;
+        border-bottom-left-radius: 26px;
+        margin-left: 0;
+    }
+
+    section {
+        display: inline-flex;
+        justify-items: center;
+        /* margin-left: -4rem; */
+    }
+
+    .grid {
+        background: rgb(63,94,251);
+        background: linear-gradient(223deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        border-radius: 24px;
+        margin-left: 0.2rem;
+    }
+
+    .grid img{
+        /* display: -moz-inline-grid; */
+        margin: 0.5rem 2rem;
+        width: 250px;
+        height: 250px;
+        border-top: 2px dotted brown;
+        border-bottom: 2px dotted brown;
+        border-bottom-left-radius: 40px;
+        border-top-right-radius: 30px;
+        border-top-color:brown;
+    }
+
+    /* recommendations */
+    /* Create three equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 31.33%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+    text-align: center;
+    color: black;
+    background-color: rgb(228, 154, 167);
+    margin-bottom: 2rem;
+  }
+  
+  .row {
+    margin-left: 4rem;
+  }
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
+  .column img {
+      width: 50%;
+      border-radius: 45%;
+      /* display: block; */
+      margin: 2.5rem;
+      height: auto;
+      margin-bottom: -1rem;
+      opacity: 2;
+  }
+
+  .column .middle img{
+    width: 52%;
+    opacity: 2;
+    margin-top: -0.3rem;
+  }
+
+
+  /* campaign0 */
+
+  .campaign {
+      display: flex;
+      height: auto;
+      width: auto;
+      margin-left: 4rem;
+      border: 1px solid blue;
+      background-color: #de4bd9;
+      border-radius: 12px;
+      
+  }
+
+  .campaign .camp {
+      display:block;
+  }
+  .campaign .camp img {
+      width: 250px;
+      height: auto;
+  }
+
+  .campaign img {
+      width: 400px;
+      height: auto;
+      border-radius: 13px;
+  }
+
+  .campaign section{
+      text-align: left;
+      background-color: rgb(228, 154, 167);
+  }
+
+  .campaign section img {
+    border-top-right-radius: 12px;
+  }
+
+  .campaign section div{
+      display: block;
+      margin-left: 1rem;
+  }
+
+
+  /* contact us */
+  .container input {
+      border: 1px dotted green;
+      border-radius: 12px;
+      height: 34px;
+      width: 50%;
+      margin-bottom: 1rem;
+  }
+  .container textarea {
+      display: block;
+      clear: both;
+      border: 1px solid red;
+      border-radius: 12px;
+      width: 300px;
+      height: 200px;
+  }
+
+  .contact {
+      display: block;
+      flex-basis: 50%;
+      
+  }
+
+
+/* map addresses */
+  .address {
+      display: block;
+      flex-basis: 50%;
+      margin: 2rem 2.5rem;
+  }
+
+  label {
+    margin: 2rem 2.5rem;
+    tab-size: 4;
+    padding-bottom: 1rem;
+  }
+
+  footer {
+      border: 1px solid rgb(13, 255, 0);
+      padding: 0;
+      display: flex;
+      background-color: #D39292 ;
+  }
+
+    footer ul {
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none; 
+    width: 100%;
+    }
+
+    footer label {
+        width: 20%;
+    }
+
+    footer li {
+    justify-content: space-between;
+    text-decoration: none;
+    display: block;
+    color: white;
+    border-radius: 12px;
+    padding: 0.2rem 0.4rem;
+    }
+/* ------------------------------container ends----------------------------------------------- */
+
+body {
+    border: 4px solid rgb(255, 255, 255);
+    /* margin-bottom: 0px; */
+    margin: 0;
+    font-family: sans-serif;
+}
