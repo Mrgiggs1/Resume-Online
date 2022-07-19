@@ -1,8 +1,38 @@
 /* ---------------------------------Nav Bar --------------------------------------------- */
-
+@media only screen and (min-width: 600px) {
+    /* For tablets: */
+    .col-s-1 {width: 8.33%;}
+    .col-s-2 {width: 16.66%;}
+    .col-s-3 {width: 25%;}
+    .col-s-4 {width: 33.33%;}
+    .col-s-5 {width: 41.66%;}
+    .col-s-6 {width: 50%;}
+    .col-s-7 {width: 58.33%;}
+    .col-s-8 {width: 66.66%;}
+    .col-s-9 {width: 75%;}
+    .col-s-10 {width: 83.33%;}
+    .col-s-11 {width: 91.66%;}
+    .col-s-12 {width: 100%;}
+  }
+  @media only screen and (min-width: 768px) {
+    /* For desktop: */
+    .col-1 {width: 8.33%;}
+    .col-2 {width: 16.66%;}
+    .col-3 {width: 25%;}
+    .col-4 {width: 33.33%;}
+    .col-5 {width: 41.66%;}
+    .col-6 {width: 50%;}
+    .col-7 {width: 58.33%;}
+    .col-8 {width: 66.66%;}
+    .col-9 {width: 75%;}
+    .col-10 {width: 83.33%;}
+    .col-11 {width: 91.66%;}
+    .col-12 {width: 100%;}
+  }
+  
 nav {
     margin-top: 0;
-    background-color: rgb(233, 161, 172);
+    background-color: rgb(0, 0, 0);
     /* border-radius: 10px; */
     padding: 0.1rem 0.3rem;
     position: fixed;
@@ -11,7 +41,7 @@ nav {
 }
 
 nav img{
-    width: 80px;
+    width: 15%;
     height: auto;
     border-radius: 10%;
     display: inline-block;
@@ -62,6 +92,7 @@ nav span {
         border-radius: 10px;
         border: 2px dotted purple;
         display: flex;
+        width: 100%;
         
     }
 
@@ -70,14 +101,14 @@ nav span {
         float: left;
         border-right: 1.5px solid purple;
         background: rgb(63,94,251);
-        background: linear-gradient(253deg, rgba(252,70,107,1) 0%,rgba(63,94,251,1)  100%);
+        background: linear-gradient(253deg, rgb(133, 101, 101) 0%,rgb(0, 0, 0)  100%);
         border-radius: 12px;
     }
 
     fieldset .left_content img {
-        padding: 3rem 2rem 0.1rem 0.1rem;
-        height: auto;
-        width: 70vh;
+        padding: 3rem 1rem 1.1rem 1.1rem;
+        height: 50vh;
+        width: 50vh;
         border-radius: 70%;
         
     }
@@ -85,16 +116,17 @@ nav span {
     fieldset .right_content {
         flex-basis: 80%;
         margin-left: 0.4rem;
+        color:burlywood;
         border-left: 2px solid pink;
         background: rgb(63,94,251);
-        background: linear-gradient(223deg, rgba(63,94,251,1) 0%, rgba(252,70,107,1) 100%);
+        background: linear-gradient(223deg, rgb(41, 33, 33) 15%, rgb(100, 122, 185) 100%);
     }
 
     fieldset .right_content h1 {
         font-family: cursive;
         font-weight: bolder;
         text-align: center;
-        color: purple;
+        color: rgb(0, 0, 0);
         font-size: 60px;
     }
 
@@ -133,7 +165,7 @@ nav span {
     }
 
     section iframe {
-        width: 70%;
+        width: 100%;
         height: auto;
         border-top-right-radius: 25px ;
         border-bottom-left-radius: 26px;
@@ -143,6 +175,7 @@ nav span {
     section {
         display: inline-flex;
         justify-items: center;
+        width: 100%;
         /* margin-left: -4rem; */
     }
 
@@ -167,19 +200,32 @@ nav span {
 
     /* recommendations */
     /* Create three equal columns that floats next to each other */
-.column {
+.row {
+    margin: 2rem;
     float: left;
-    width: 31.33%;
-    padding: 10px;
+    width: 100%;
+    display: inline-flex;
+    justify-content:space-between;
     height: 300px; /* Should be removed. Only for demonstration */
     text-align: center;
-    color: black;
-    background-color: rgb(228, 154, 167);
-    margin-bottom: 2rem;
+    color:darkgrey;
+    background-color: rgb(0, 0, 0);
+    border-radius: 5%;
+    /* margin-bottom: 2rem; */
   }
   
-  .row {
-    margin-left: 4rem;
+  .column {
+    padding: 3rem;
+    justify-content:space-between;
+    width: 100%;
+    height: auto;
+    display: block;
+    
+  }
+
+  .column cite {
+      padding: 1rem 0%;
+      position: absolute;
   }
   /* Clear floats after the columns */
   .row:after {
@@ -189,13 +235,18 @@ nav span {
   }
 
   .column img {
-      width: 50%;
-      border-radius: 45%;
+      width: 70%;
+      /* border-radius: 45%; */
       /* display: block; */
-      margin: 2.5rem;
-      height: auto;
-      margin-bottom: -1rem;
+      /* margin-top: 0; */
+      height: 40%;
+      margin-bottom: 0;
       opacity: 2;
+  }
+
+  .column p{
+      padding-bottom: 0;
+      margin-bottom: 0%;
   }
 
   .column .middle img{
@@ -220,6 +271,7 @@ nav span {
 
   .campaign .camp {
       display:block;
+      width: 100%;
   }
   .campaign .camp img {
       width: 250px;
@@ -234,7 +286,7 @@ nav span {
 
   .campaign section{
       text-align: left;
-      background-color: rgb(228, 154, 167);
+      background-color: rgb(230, 203, 209);
   }
 
   .campaign section img {
